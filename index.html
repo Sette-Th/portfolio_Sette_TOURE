@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Sette TOURE</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Personnel -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Bienvenue sur mon Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Accueil</a></li>
+            <li><a href="#" onclick="showSection('about')">À propos</a></li>
+            <li><a href="#" onclick="showSection('skills')">Compétences</a></li>
+            <li><a href="#" onclick="showSection('interests')">Centres d'intérêt</a></li>
+            <li><a href="#" onclick="showSection('languages')">Langues</a></li>
+            <li><a href="#" onclick="showSection('vie-associative')">Vie associative</a></li>
+            <li><a href="#" onclick="showSection('projects')">Mes projets</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- Accueil -->
+    <section id="home" class="content-section">
+        <h2>Bienvenue !</h2>
+        <img src="images/sette.jpg" alt="Photo de Sette TOURE" class="profile-img">
+        <p>Je suis <strong>Sette TOURE</strong>, élève ingénieur passionné par la Data Science, l'IA et l'innovation technologique.</p>
+        <p>Explorez mon portfolio pour découvrir mon parcours, mes compétences et mes projets.</p>
+    </section>
+
+    <!-- À propos -->
+    <section id="about" class="content-section">
+        <h2><i class="fas fa-user about-icon"></i> À propos de moi</h2>
+        <p>Je suis <strong>Sette TOURE</strong>, étudiant ingénieur en première année à l’<strong>École Centrale de Casablanca (ECC)</strong>, grande école d'ingénieurs généralistes au Maroc.</p>
+        <p>Mon parcours est animé par une <strong>curiosité scientifique constante</strong> et une <strong>soif d’apprentissage par la pratique</strong>.</p>
+        <p>Formé en <strong>Classes Préparatoires aux Grandes Écoles (CPGE)</strong> à Thiès (PCSI puis PC), j'ai acquis de solides bases en <strong>mathématiques</strong>, <strong>physique</strong>, <strong>chimie</strong>, <strong>sciences de l’ingénieur</strong> et <strong>informatique</strong>.</p>
+        <p>Diplômé en 2022 d'un <strong>baccalauréat scientifique</strong> (S2 – Sciences expérimentales) avec la <strong>mention Très Bien</strong>, je poursuis aujourd'hui ma passion pour la <strong>Data Science</strong>, l’<strong>Intelligence Artificielle</strong> et le <strong>développement web</strong>.</p>
+    </section>
+
+    <!-- Compétences -->
+<section id="skills" class="content-section">
+    <h2><i class="fas fa-tools skills-icon"></i> Compétences</h2>
+    <ul>
+        <li><i class="fab fa-python"></i> Python</li>
+        <li><i class="fab fa-java"></i> Java</li> <!-- ➕ Ajout de Java ici -->
+        <li><i class="fab fa-html5"></i> HTML5, CSS3</li>
+        <li><i class="fas fa-file-alt"></i> Bureautique : Excel, Word, PowerPoint</li>
+    </ul>
+</section>
+
+
+    <!-- Centres d'intérêt -->
+    <section id="interests" class="content-section">
+        <h2><i class="fas fa-heart interests-icon"></i> Centres d'intérêt</h2>
+        <ul>
+            <li><i class="fas fa-futbol"></i> Football (joueur dans l'équipe de l'école)</li>
+            <li><i class="fas fa-basketball-ball"></i> Basketball</li>
+            <li><i class="fas fa-book"></i> Lecture</li>
+            <li><i class="fas fa-utensils"></i> Cuisine</li>
+        </ul>
+    </section>
+
+    <!-- Langues -->
+    <section id="languages" class="content-section">
+        <h2><i class="fas fa-language languages-icon"></i> Langues parlées</h2>
+        <ul>
+            <li><i class="fas fa-globe"></i> Français : Niveau C1</li>
+            <li><i class="fas fa-globe"></i> Anglais : Niveau B2</li>
+            <li><i class="fas fa-globe"></i> Wolof : Natif</li>
+        </ul>
+    </section>
+
+    <!-- Vie associative -->
+    <section id="vie-associative" class="content-section">
+        <h2><i class="fas fa-users associative-icon"></i> Vie associative</h2>
+        <ul>
+            <li><img src="images/centraletech.jpeg" alt="CentraleTech" class="logo-club"> Membre actif du Club <strong>CentraleTech</strong> – Pôle Data & IA</li>
+            <li><img src="images/oratoria.png" alt="Oratoria" class="logo-club"> Membre actif du Club <strong>ORATORIA</strong> – Art oratoire</li>
+        </ul>
+    </section>
+
+    <!-- Projets -->
+    <section id="projects" class="content-section">
+        <h2><i class="fas fa-project-diagram project-icon"></i> Mes projets</h2>
+
+        <div class="project">
+            <h3>Robot suiveur de ligne</h3>
+            <img src="images/robot.jpg" alt="Robot suiveur" class="project-img robot-img">
+            <p>Conception d’un robot mobile autonome capable de suivre un tracé prédéfini, réalisé au Fablab de l’ECC.</p>
+        </div>
+
+        <div class="project">
+            <h3>Optimisation énergétique des data centers</h3>
+            <img src="images/datacenter.jpg" alt="Data center" class="project-img">
+            <p>Développement d’un modèle prédictif intelligent pour réduire la consommation énergétique des data centers.</p>
+        </div>
+
+        <div class="project">
+            <h3>Application de prédiction du risque d’insuffisance cardiaque</h3>
+            <img src="images/heartfailure.jpg" alt="App prédiction" class="project-img">
+            <p>Application Streamlit pour évaluer les risques médicaux par des modèles Machine Learning.</p>
+        </div>
+
+        <div class="project">
+            <h3>Projet FOREX – Mesure expérimentale des ondes sismiques</h3>
+            <img src="images/forex.jpg" alt="Projet FOREX" class="project-img">
+            <p>Étude expérimentale des ondes mécaniques dans différents matériaux à l’aide de capteurs piézoélectriques et Arduino, analyse avec Audacity.</p>
+        </div>
+    </section>
+
+   <!-- Contact -->
+   <section id="contact" class="content-section">
+    <h2><i class="fas fa-envelope contact-icon"></i> Contact</h2>
+    <p><i class="fas fa-envelope"></i> <strong>Email professionnel :</strong> <a href="mailto:sette.toure@centrale-casablanca.ma">sette.toure@centrale-casablanca.ma</a></p>
+    <p><i class="fas fa-envelope"></i> <strong>Email personnel :</strong> <a href="mailto:touresette77@gmail.com">touresette77@gmail.com</a></p>
+    <p><i class="fab fa-linkedin"></i> <strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/sette-touré-3a36a8337">Mon LinkedIn</a></p>
+    <p><i class="fab fa-github"></i> <strong>GitHub :</strong> <a href="https://github.com/Sette-Th">Mon GitHub</a></p>
+    <p><i class="fas fa-phone"></i> <strong>Téléphone :</strong> (+212) 0783346309</p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2025 Sette TOURE | Portfolio personnel</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
